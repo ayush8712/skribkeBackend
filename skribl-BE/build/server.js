@@ -10,7 +10,7 @@ const cors_1 = __importDefault(require("cors"));
 const boot = (port) => {
     const app = (0, express_1.default)();
     app.use((0, cors_1.default)({
-        origin: ["http://localhost:3000", "https://skribble-app.netlify.app/"],
+        origin: ["http://localhost:3000", "skrible-frontend-eta.vercel.app"],
     }));
     app.get("/", (req, res) => {
         return res.send("Server is up");
